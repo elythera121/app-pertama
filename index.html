@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Belajar HTML - Versi Tanpa CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Website Belajar HTML (Tanpa CSS)</h1>
+    <nav>
+      <a href="#about">Tentang</a> |
+      <a href="#list">Daftar</a> |
+      <a href="#table">Tabel</a> |
+      <a href="#form">Form</a>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>Tentang Halaman Ini</h2>
+      <p>
+        Ini versi <strong>murni HTML</strong> tanpa CSS. Semua elemen yang sering dipakai ada di sini:
+        judul, paragraf, gambar, list, tabel, dan form. Lu bisa pelan-pelan tambahin CSS nanti.
+      </p>
+      <p>
+        Contoh line break: <br>
+        Baris pertama<br>
+        Baris kedua
+      </p>
+
+      <p>
+        Contoh teks kecil inline pakai &lt;span&gt;:
+        Ini teks biasa, dan <span>ini teks yang di-span</span>.
+      </p>
+
+      <p>
+        Contoh kutipan singkat:
+        <q>Belajar HTML dulu, styling belakangan.</q>
+      </p>
+
+      <!-- gambar (akan tampil sesuai ukuran asli browser/remote) -->
+      <p>
+        <img src="https://placekitten.com/300/200" alt="Contoh Gambar (kucing)">
+      </p>
+    </section>
+
+    <!-- LIST -->
+    <section id="list">
+      <h2>Contoh List</h2>
+
+      <h3>Unordered List</h3>
+      <ul>
+        <li>Belajar tag HTML dasar</li>
+        <li>Praktik struktur dokumen</li>
+        <li>Siap lanjut ke CSS nanti</li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Buka editor (Notepad / VS Code)</li>
+        <li>Tulis HTML</li>
+        <li>Buka file di browser</li>
+      </ol>
+    </section>
+
+    <!-- TABLE -->
+    <section id="table">
+      <h2>Contoh Tabel</h2>
+      <table border="1">
+        <caption>Data Siswa</caption>
+        <tr>
+          <th>Nama</th>
+          <th>Umur</th>
+          <th>Kelas</th>
+        </tr>
+        <tr>
+          <td>Ciel</td>
+          <td>15</td>
+          <td>X TJKT</td>
+        </tr>
+        <tr>
+          <td>Budi</td>
+          <td>17</td>
+          <td>XII RPL</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- FORM -->
+    <section id="form">
+      <h2>Form Pendaftaran (Contoh)</h2>
+      <form action="#" method="post">
+        <p>
+          <label for="nama">Nama Lengkap:</label><br>
+          <input type="text" id="nama" name="nama" placeholder="Tulis nama lu">
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label for="kelas">Pilih Kelas:</label><br>
+          <select id="kelas" name="kelas">
+            <option value="tjkt">TJKT</option>
+            <option value="rpl">RPL</option>
+            <option value="mm">MM</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="bio">Deskripsi Singkat:</label><br>
+          <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Kenapa mau belajar web?"></textarea>
+        </p>
+
+        <p>
+          <button type="submit">Kirim</button>
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 | Latihan HTML - Dibuat oleh Reyhan</p>
+    <p>
+      <small>Note: tampilan ini masih polos karena belum ada CSS. Nanti kita bikin versi cakep</small>
+    </p>
+  </footer>
+
+</body>
+</html>
